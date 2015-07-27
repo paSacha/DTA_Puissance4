@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Bruno",
+      "email": "delapouite@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Nicolas",
+      "email": "naholyr@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Thomas",
+      "email": "tmoyse@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Bob",
+      "email": "quatre@ici"
+    },
+    {
+      "id": 5,
+      "name": "Bernard",
+      "email": "cinq@ici"
+    },
+    {
+      "name": "aaa",
+      "id": 6
+    },
+    {
+      "name": "bob",
+      "email": "",
+      "id": 7
+    },
+    {
+      "name": "bobette",
+      "email": "",
+      "id": 8
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "user1": 1,
+      "user2": 2,
+      "plays": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        4,
+        1,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<div class="currentplayer">
+    Joueur {{ game.nextPlayer }} : <span ng-class="'color' + game.nextPlayer"></span>
+</div>
+
+<div class="board">
+    <ul ng-click="game.play($index)"
+    ng-repeat="colonne in game.board track by $index">
+        <li ng-repeat="cell in colonne track by $index"
+        ng-class="['ball' + $index, 'color' + cell]"></li>
+    </ul>
+</div>

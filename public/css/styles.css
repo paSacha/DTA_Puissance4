@@ -1,0 +1,46 @@
+.board {
+    margin: 50px;
+}
+.board ul {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    width: 60px;
+    float: left;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.board ul:first-child {
+    border-left: 1px solid #ddd;
+}
+.board ul li, .currentplayer span {
+    margin: 10px;
+    padding: 0;
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.currentplayer span {
+    display: inline-block;
+    position: relative;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+@keyframes gravity {
+   0% { bottom: 350px; }
+}
+
+.board ul li.ball0 { animation: gravity 1s; bottom: 0px; }
+.board ul li.ball1 { animation: gravity 1s; bottom: 50px; }
+.board ul li.ball2 { animation: gravity 1s; bottom: 100px; }
+.board ul li.ball3 { animation: gravity 1s; bottom: 150px; }
+.board ul li.ball4 { animation: gravity 1s; bottom: 200px; }
+.board ul li.ball5 { animation: gravity 1s; bottom: 250px; }
+.board ul li.color1, div.currentplayer span.color1 { background-color: red; }
+.board ul li.color2, div.currentplayer span.color2 { background-color: blue; }

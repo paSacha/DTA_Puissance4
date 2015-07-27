@@ -1,0 +1,25 @@
+{
+  "name": "toto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "grunt": "grunt",
+    "start": "json-server db.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.2",
+    "jasmine-core": "^2.3.4",
+    "json-server": "^0.7.21",
+    "karma": "^0.13.2",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.6"
+  }
+}

@@ -1,0 +1,44 @@
+<div>
+
+<ul>
+    <li ng-repeat="user in login.users">
+        <dta-gravatar email="user.email">{{ user.name }}</dta-gravatar>
+    </li>
+</ul>
+
+<div>
+
+    <div style="float:left;width:40%"
+    ng-repeat="account in login.accounts">
+
+        <form ng-hide="account.user.id"
+            name="account.form"
+            ng-submit="login.setUser(account)"
+            novalidate>
+            <input required placeholder="Votre nom ..."
+            ng-change="login.test(account.user.name)"
+            ng-model="account.user.name">
+            <br>
+            <input type="email" placeholder="Votre email ..."
+            ng-model="account.user.email">
+            <br>
+            <button type="submit">Connexion / inscription</button>
+        </form>
+        <div ng-show="account.user.id">
+            Joueur {{ $index + 1 }} : {{ account.user.name }}
+        </div>
+
+    </div>
+
+</div>
+
+<div style="clear:both;">
+    <pre>{{ login.games }}</pre>
+    <ul>
+        <li ng-repeat="game in login.games">
+        <a ng-href="#/game/{{game.id}}" >Jeux numéro : {{game.id}}</a>
+        </li>
+    </ul>
+</div>
+
+</div>
